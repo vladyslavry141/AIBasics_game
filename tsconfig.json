@@ -1,21 +1,20 @@
 {
   "compilerOptions": {
-    "target": "ES2015",
-    "module": "ES2015",
-
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-
+    "baseUrl": "src",
+    "target": "es5",
+    "lib": ["dom", "esnext"],
     "allowJs": true,
-    "allowUnreachableCode": false,
-    "noImplicitAny": false,
-    "sourceMap": true,
-    "strictPropertyInitialization": false,
-
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
     "moduleResolution": "node",
-    "lib": ["dom", "esnext"]
+    "resolveJsonModule": true,
+    // "isolatedModules": true,
+    // "noEmit": true,
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "**/*.spec.ts"]
